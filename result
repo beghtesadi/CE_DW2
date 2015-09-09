@@ -1,0 +1,593 @@
+SCIP Status        : problem is solved [optimal solution found]
+Total Time         :     436.02
+  solving          :     436.02
+  presolving       :       0.02 (included in solving)
+  reading          :       0.00
+  copying          :       0.00 (0 times copied the problem)
+Original Problem   :
+  Problem name     : vaccine
+  Variables        : 636 (0 binary, 0 integer, 0 implicit integer, 636 continuous)
+  Constraints      : 2047 initial, 2047 maximal
+  Objective sense  : minimize
+Presolved Problem  :
+  Problem name     : t_vaccine
+  Variables        : 1694 (0 binary, 0 integer, 0 implicit integer, 1694 continuous)
+  Constraints      : 2047 initial, 2047 maximal
+Presolvers         :   ExecTime  SetupTime  Calls  FixedVars   AggrVars   ChgTypes  ChgBounds   AddHoles    DelCons    AddCons   ChgSides   ChgCoefs
+  boundshift       :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  components       :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  convertinttobin  :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  domcol           :       0.01       0.00      2        190          0          0          0          0          0          0          0          0
+  dualinfer        :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  gateextraction   :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  implics          :       0.00       0.00      2          0          0          0          0          0          0          0          0          0
+  inttobinary      :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  trivial          :       0.00       0.00      2          0          0          0          0          0          0          0          0          0
+  dualfix          :       0.00       0.00      2          0          0          0          0          0          0          0          0          0
+  genvbounds       :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  probing          :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  pseudoobj        :       0.00       0.00      0          0          0          0          0          0          0          0          0          0
+  linear           :       0.00       0.00      2          0          0          0          0          0          0          0          0          0
+  root node        :          -          -      -          0          -          -          0          -          -          -          -          -
+Constraints        :     Number  MaxNumber  #Separate #Propagate    #EnfoLP    #EnfoPS     #Check   #ResProp    Cutoffs    DomReds       Cuts    Applied      Conss   Children
+  integral         :          0          0          0          0          0          0         17          0          0          0          0          0          0          0
+  linear           :       2047       2047          0          1          0          0         16          0          0          0          0          0          0          0
+  countsols        :          0          0          0          0          0          0         13          0          0          0          0          0          0          0
+Constraint Timings :  TotalTime  SetupTime   Separate  Propagate     EnfoLP     EnfoPS      Check    ResProp    SB-Prop
+  integral         :       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00
+  linear           :       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00
+  countsols        :       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00       0.00
+Propagators        : #Propagate   #ResProp    Cutoffs    DomReds
+  dualfix          :          1          0          0          0
+  genvbounds       :          0          0          0          0
+  obbt             :          0          0          0          0
+  probing          :          0          0          0          0
+  pseudoobj        :          0          0          0          0
+  redcost          :          0          0          0          0
+  rootredcost      :          0          0          0          0
+  vbounds          :          1          0          0          0
+Propagator Timings :  TotalTime  SetupTime   Presolve  Propagate    ResProp    SB-Prop
+  dualfix          :       0.00       0.00       0.00       0.00       0.00       0.00
+  genvbounds       :       0.00       0.00       0.00       0.00       0.00       0.00
+  obbt             :       0.00       0.00       0.00       0.00       0.00       0.00
+  probing          :       0.00       0.00       0.00       0.00       0.00       0.00
+  pseudoobj        :       0.00       0.00       0.00       0.00       0.00       0.00
+  redcost          :       0.00       0.00       0.00       0.00       0.00       0.00
+  rootredcost      :       0.00       0.00       0.00       0.00       0.00       0.00
+  vbounds          :       0.00       0.00       0.00       0.00       0.00       0.00
+Conflict Analysis  :       Time      Calls    Success    DomReds  Conflicts   Literals    Reconvs ReconvLits   LP Iters
+  propagation      :       0.00          0          0          -          0        0.0          0        0.0          -
+  infeasible LP    :       0.00          0          0          -          0        0.0          0        0.0          0
+  bound exceed. LP :       0.00          0          0          -          0        0.0          0        0.0          0
+  strong branching :       0.00          0          0          -          0        0.0          0        0.0          0
+  pseudo solution  :       0.00          0          0          -          0        0.0          0        0.0          -
+  applied globally :       0.00          -          -          0          0        0.0          -          -          -
+  applied locally  :          -          -          -          0          0        0.0          -          -          -
+Separators         :   ExecTime  SetupTime      Calls    Cutoffs    DomReds       Cuts    Applied      Conss
+  cut pool         :       0.00                     0          -          -          0          -          -    (maximal pool size: 0)
+  cgmip            :       0.00       0.00          0          0          0          0          0          0
+  clique           :       0.00       0.00          0          0          0          0          0          0
+  closecuts        :       0.00       0.00          0          0          0          0          0          0
+  cmir             :       0.00       0.00          0          0          0          0          0          0
+  flowcover        :       0.00       0.00          0          0          0          0          0          0
+  gomory           :       0.00       0.00          0          0          0          0          0          0
+  impliedbounds    :       0.00       0.00          0          0          0          0          0          0
+  intobj           :       0.00       0.00          0          0          0          0          0          0
+  mcf              :       0.00       0.00          0          0          0          0          0          0
+  oddcycle         :       0.00       0.00          0          0          0          0          0          0
+  rapidlearning    :       0.00       0.00          0          0          0          0          0          0
+  strongcg         :       0.00       0.00          0          0          0          0          0          0
+  zerohalf         :       0.00       0.00          0          0          0          0          0          0
+Pricers            :   ExecTime  SetupTime      Calls       Vars
+  problem variables:       0.00          -          0          0
+  vaccine_Pricer   :     435.59       0.00         11       1248
+Branching Rules    :   ExecTime  SetupTime   BranchLP  BranchExt   BranchPS    Cutoffs    DomReds       Cuts      Conss   Children
+  allfullstrong    :       0.00       0.00          0          0          0          0          0          0          0          0
+  cloud            :       0.00       0.00          0          0          0          0          0          0          0          0
+  fullstrong       :       0.00       0.00          0          0          0          0          0          0          0          0
+  inference        :       0.00       0.00          0          0          0          0          0          0          0          0
+  leastinf         :       0.00       0.00          0          0          0          0          0          0          0          0
+  mostinf          :       0.00       0.00          0          0          0          0          0          0          0          0
+  pscost           :       0.00       0.00          0          0          0          0          0          0          0          0
+  random           :       0.00       0.00          0          0          0          0          0          0          0          0
+  relpscost        :       0.00       0.00          0          0          0          0          0          0          0          0
+Primal Heuristics  :   ExecTime  SetupTime      Calls      Found
+  LP solutions     :       0.00          -          -          1
+  pseudo solutions :       0.00          -          -          0
+  strong branching :       0.00          -          -          0
+  actconsdiving    :       0.00       0.00          0          0
+  clique           :       0.00       0.00          0          0
+  coefdiving       :       0.00       0.00          0          0
+  crossover        :       0.00       0.00          0          0
+  dins             :       0.00       0.00          0          0
+  dualval          :       0.00       0.00          0          0
+  feaspump         :       0.00       0.00          0          0
+  fixandinfer      :       0.00       0.00          0          0
+  fracdiving       :       0.00       0.00          0          0
+  guideddiving     :       0.00       0.00          0          0
+  intdiving        :       0.00       0.00          0          0
+  intshifting      :       0.00       0.00          0          0
+  linesearchdiving :       0.00       0.00          0          0
+  localbranching   :       0.00       0.00          0          0
+  mutation         :       0.00       0.00          0          0
+  nlpdiving        :       0.00       0.00          0          0
+  objpscostdiving  :       0.00       0.00          0          0
+  octane           :       0.00       0.00          0          0
+  oneopt           :       0.00       0.00          0          0
+  proximity        :       0.00       0.00          0          0
+  pscostdiving     :       0.00       0.00          0          0
+  randrounding     :       0.00       0.00          0          0
+  rens             :       0.00       0.00          0          0
+  rins             :       0.00       0.00          0          0
+  rootsoldiving    :       0.00       0.00          0          0
+  rounding         :       0.00       0.00          0          0
+  shiftandpropagate:       0.00       0.00          0          0
+  shifting         :       0.00       0.00          0          0
+  simplerounding   :       0.00       0.00         10         10
+  subnlp           :       0.00       0.00          0          0
+  trivial          :       0.01       0.00          2          0
+  trysol           :       0.00       0.00          0          0
+  twoopt           :       0.00       0.00          0          0
+  undercover       :       0.00       0.00          0          0
+  vbounds          :       0.00       0.00          0          0
+  veclendiving     :       0.00       0.00          0          0
+  zeroobj          :       0.00       0.00          0          0
+  zirounding       :       0.00       0.00          0          0
+  other solutions  :          -          -          -          0
+LP                 :       Time      Calls Iterations  Iter/call   Iter/sec  Time-0-It Calls-0-It
+  primal LP        :       0.33         10       6159     615.90   18663.64       0.00          0
+  dual LP          :       0.02          2        158     158.00    7900.00       0.00          1
+  lex dual LP      :       0.00          0          0       0.00          -
+  barrier LP       :       0.00          0          0       0.00          -       0.00          0
+  diving/probing LP:       0.00          0          0       0.00          -
+  strong branching :       0.00          0          0       0.00          -
+    (at root node) :          -          0          0       0.00          -
+  conflict analysis:       0.00          0          0       0.00          -
+B&B Tree           :
+  number of runs   :          1
+  nodes            :          1 (0 internal, 1 leaves)
+  nodes (total)    :          1 (0 internal, 1 leaves)
+  nodes left       :          0
+  max depth        :          0
+  max depth (total):          0
+  backtracks       :          0 (0.0%)
+  delayed cutoffs  :          0
+  repropagations   :          0 (0 domain reductions, 0 cutoffs)
+  avg switch length:       2.00
+  switching time   :       0.00
+Root Node          :
+  First LP value   :          -
+  First LP Iters   :          0
+  First LP Time    :       0.03
+  Final Dual Bound : +1.72320564538176e+05
+  Final Root Iters :       6317
+Solution           :
+  Solutions found  :         11 (11 improvements)
+  First Solution   : +5.41534014577716e+05   (in run 1, after 1 nodes, 0.06 seconds, depth 0, found by <relaxation>)
+  Gap First Sol.   :   infinite
+  Gap Last Sol.    :   infinite
+  Primal Bound     : +1.72320564538176e+05   (in run 1, after 1 nodes, 396.73 seconds, depth 0, found by <simplerounding>)
+  Dual Bound       : +1.72320564538176e+05
+  Gap              :       0.00 %
+  Avg. Gap         :     100.00 % (43601.00 primal-dual integral)
+objective value:                     172320.564538176
+Z0                                  0.370714554171277 	(obj:0)
+Z1                                  0.496571643337022 	(obj:0)
+Z2                                  0.496571643337022 	(obj:0)
+Z3                                  0.597257314669617 	(obj:0)
+Z4                                  0.496571643337022 	(obj:0)
+Z5                                  0.496571643337022 	(obj:0)
+Z6                                  0.597257314669617 	(obj:0)
+Z7                                  0.597257314669617 	(obj:0)
+Alpha2_0                                         0.96 	(obj:0)
+Alpha2_1                                         0.92 	(obj:0)
+Alpha3_0                                         0.96 	(obj:0)
+Alpha3_1                                         0.97 	(obj:0)
+Alpha3_2                                         0.96 	(obj:0)
+Alpha3_3                                         0.97 	(obj:0)
+Alpha4_0                                         0.96 	(obj:0)
+Alpha4_1                                         0.96 	(obj:0)
+Alpha4_2                                         0.96 	(obj:0)
+Alpha4_3                                         0.97 	(obj:0)
+Alpha4_4                                         0.96 	(obj:0)
+Alpha4_5                                         0.97 	(obj:0)
+Alpha4_6                                         0.96 	(obj:0)
+Alpha4_7                                         0.96 	(obj:0)
+Alpha5_0                            0.984828582166851 	(obj:0)
+Alpha5_1                                         0.96 	(obj:0)
+Alpha5_2                                         0.96 	(obj:0)
+Alpha5_3                                         0.96 	(obj:0)
+Alpha5_4                                         0.96 	(obj:0)
+Alpha5_5                                         0.96 	(obj:0)
+Alpha5_6                                         0.96 	(obj:0)
+Alpha5_7                                         0.97 	(obj:0)
+Alpha5_8                                         0.96 	(obj:0)
+Alpha5_9                                         0.96 	(obj:0)
+Alpha5_10                                        0.96 	(obj:0)
+Alpha5_11                                        0.96 	(obj:0)
+Alpha5_12                                        0.96 	(obj:0)
+Alpha5_13                                        0.97 	(obj:0)
+Alpha5_14                                        0.96 	(obj:0)
+Alpha5_15                                        0.97 	(obj:0)
+Alpha6_0                            0.984828582166851 	(obj:0)
+Alpha6_1                            0.989862865733481 	(obj:0)
+Alpha6_2                                         0.96 	(obj:0)
+Alpha6_3                                         0.96 	(obj:0)
+Alpha6_4                                         0.96 	(obj:0)
+Alpha6_5                                         0.96 	(obj:0)
+Alpha6_6                                         0.96 	(obj:0)
+Alpha6_7                                         0.96 	(obj:0)
+Alpha6_8                                         0.96 	(obj:0)
+Alpha6_9                                         0.96 	(obj:0)
+Alpha6_10                                        0.96 	(obj:0)
+Alpha6_11                                        0.96 	(obj:0)
+Alpha6_12                                        0.96 	(obj:0)
+Alpha6_13                                        0.96 	(obj:0)
+Alpha6_14                                        0.96 	(obj:0)
+Alpha6_15                                        0.96 	(obj:0)
+Alpha6_16                                        0.96 	(obj:0)
+Alpha6_17                                        0.96 	(obj:0)
+Alpha6_18                                        0.96 	(obj:0)
+Alpha6_19                                        0.97 	(obj:0)
+Alpha6_20                                        0.96 	(obj:0)
+Alpha6_21                                        0.96 	(obj:0)
+Alpha6_22                                        0.96 	(obj:0)
+Alpha6_23                                        0.97 	(obj:0)
+Alpha6_24                                        0.96 	(obj:0)
+Alpha6_25                                        0.96 	(obj:0)
+Alpha6_26                                        0.96 	(obj:0)
+Alpha6_27                                        0.97 	(obj:0)
+Alpha6_28                                        0.96 	(obj:0)
+Alpha6_29                                        0.97 	(obj:0)
+Alpha6_30                                        0.96 	(obj:0)
+Alpha6_31                                      0.9699 	(obj:0)
+Alpha7_0                            0.984828582166851 	(obj:0)
+Alpha7_1                            0.989862865733481 	(obj:0)
+Alpha7_2                            0.984828582166851 	(obj:0)
+Alpha7_3                            0.993890292586785 	(obj:0)
+Alpha7_4                                         0.96 	(obj:0)
+Alpha7_5                                         0.96 	(obj:0)
+Alpha7_6                                         0.96 	(obj:0)
+Alpha7_7                                         0.96 	(obj:0)
+Alpha7_8                                         0.96 	(obj:0)
+Alpha7_9                                         0.96 	(obj:0)
+Alpha7_10                                        0.96 	(obj:0)
+Alpha7_11                                        0.96 	(obj:0)
+Alpha7_12                                        0.96 	(obj:0)
+Alpha7_13                                        0.96 	(obj:0)
+Alpha7_14                                        0.96 	(obj:0)
+Alpha7_15                                        0.96 	(obj:0)
+Alpha7_16                                        0.96 	(obj:0)
+Alpha7_17                                        0.96 	(obj:0)
+Alpha7_18                                        0.96 	(obj:0)
+Alpha7_19                                        0.96 	(obj:0)
+Alpha7_20                                        0.96 	(obj:0)
+Alpha7_21                                        0.96 	(obj:0)
+Alpha7_22                                        0.96 	(obj:0)
+Alpha7_23                                        0.96 	(obj:0)
+Alpha7_24                                        0.96 	(obj:0)
+Alpha7_25                                        0.96 	(obj:0)
+Alpha7_26                                        0.96 	(obj:0)
+Alpha7_27                                        0.96 	(obj:0)
+Alpha7_28                                        0.96 	(obj:0)
+Alpha7_29                                        0.96 	(obj:0)
+Alpha7_30                                        0.96 	(obj:0)
+Alpha7_31                                        0.96 	(obj:0)
+Alpha7_32                                        0.96 	(obj:0)
+Alpha7_33                                        0.97 	(obj:0)
+Alpha7_34                                        0.96 	(obj:0)
+Alpha7_35                                        0.97 	(obj:0)
+Alpha7_36                                        0.96 	(obj:0)
+Alpha7_37                                        0.97 	(obj:0)
+Alpha7_38                                        0.96 	(obj:0)
+Alpha7_39                                        0.96 	(obj:0)
+Alpha7_40                                        0.96 	(obj:0)
+Alpha7_41                                        0.97 	(obj:0)
+Alpha7_42                                        0.96 	(obj:0)
+Alpha7_43                                        0.97 	(obj:0)
+Alpha7_44                                        0.96 	(obj:0)
+Alpha7_45                                        0.97 	(obj:0)
+Alpha7_46                                        0.96 	(obj:0)
+Alpha7_47                                        0.97 	(obj:0)
+Alpha7_48                                        0.96 	(obj:0)
+Alpha7_49                                        0.97 	(obj:0)
+Alpha7_50                                        0.96 	(obj:0)
+Alpha7_51                                        0.97 	(obj:0)
+Alpha7_52                                        0.96 	(obj:0)
+Alpha7_53                                        0.97 	(obj:0)
+Alpha7_54                                        0.96 	(obj:0)
+Alpha7_55                                        0.97 	(obj:0)
+Alpha7_56                                        0.96 	(obj:0)
+Alpha7_57                                        0.97 	(obj:0)
+Alpha7_58                                        0.96 	(obj:0)
+Alpha7_59                                        0.96 	(obj:0)
+Alpha7_60                                        0.96 	(obj:0)
+Alpha7_61                                        0.97 	(obj:0)
+Alpha7_62                                        0.96 	(obj:0)
+Alpha7_63                                      0.9601 	(obj:0)
+Alpha8_0                                            1 	(obj:0)
+Alpha8_1                                            1 	(obj:0)
+Alpha8_2                                            1 	(obj:0)
+Alpha8_3                                            1 	(obj:0)
+Alpha8_4                                            1 	(obj:0)
+Alpha8_5                                            1 	(obj:0)
+Alpha8_6                                            1 	(obj:0)
+Alpha8_7                            0.995972573146696 	(obj:0)
+Alpha8_8                                            1 	(obj:0)
+Alpha8_9                                            1 	(obj:0)
+Alpha8_10                                           1 	(obj:0)
+Alpha8_11                                           1 	(obj:0)
+Alpha8_12                                           1 	(obj:0)
+Alpha8_13                                           1 	(obj:0)
+Alpha8_14                                           1 	(obj:0)
+Alpha8_15                                           1 	(obj:0)
+Alpha8_16                                           1 	(obj:0)
+Alpha8_17                                           1 	(obj:0)
+Alpha8_18                                           1 	(obj:0)
+Alpha8_19                                           1 	(obj:0)
+Alpha8_20                                           1 	(obj:0)
+Alpha8_21                                           1 	(obj:0)
+Alpha8_22                                           1 	(obj:0)
+Alpha8_23                                           1 	(obj:0)
+Alpha8_24                                           1 	(obj:0)
+Alpha8_25                                           1 	(obj:0)
+Alpha8_26                                           1 	(obj:0)
+Alpha8_27                                           1 	(obj:0)
+Alpha8_28                                           1 	(obj:0)
+Alpha8_29                                           1 	(obj:0)
+Alpha8_30                                           1 	(obj:0)
+Alpha8_31                                           1 	(obj:0)
+Alpha8_32                                           1 	(obj:0)
+Alpha8_33                                           1 	(obj:0)
+Alpha8_34                                           1 	(obj:0)
+Alpha8_35                                           1 	(obj:0)
+Alpha8_36                                           1 	(obj:0)
+Alpha8_37                                           1 	(obj:0)
+Alpha8_38                                           1 	(obj:0)
+Alpha8_39                                           1 	(obj:0)
+Alpha8_40                                           1 	(obj:0)
+Alpha8_41                                           1 	(obj:0)
+Alpha8_42                                           1 	(obj:0)
+Alpha8_43                                           1 	(obj:0)
+Alpha8_44                                           1 	(obj:0)
+Alpha8_45                                           1 	(obj:0)
+Alpha8_46                                           1 	(obj:0)
+Alpha8_47                                           1 	(obj:0)
+Alpha8_48                                           1 	(obj:0)
+Alpha8_49                                           1 	(obj:0)
+Alpha8_50                                           1 	(obj:0)
+Alpha8_51                                           1 	(obj:0)
+Alpha8_52                                           1 	(obj:0)
+Alpha8_53                                           1 	(obj:0)
+Alpha8_54                                           1 	(obj:0)
+Alpha8_55                                           1 	(obj:0)
+Alpha8_56                                           1 	(obj:0)
+Alpha8_57                                           1 	(obj:0)
+Alpha8_58                                           1 	(obj:0)
+Alpha8_59                                           1 	(obj:0)
+Alpha8_60                                           1 	(obj:0)
+Alpha8_61                                           1 	(obj:0)
+Alpha8_62                                           1 	(obj:0)
+Alpha8_63                                           1 	(obj:0)
+Alpha8_64                                           1 	(obj:0)
+Alpha8_65                                           1 	(obj:0)
+Alpha8_66                                           1 	(obj:0)
+Alpha8_67                                        0.99 	(obj:0)
+Alpha8_68                                           1 	(obj:0)
+Alpha8_69                                           1 	(obj:0)
+Alpha8_70                                           1 	(obj:0)
+Alpha8_71                                        0.99 	(obj:0)
+Alpha8_72                                           1 	(obj:0)
+Alpha8_73                                           1 	(obj:0)
+Alpha8_74                                           1 	(obj:0)
+Alpha8_75                                        0.99 	(obj:0)
+Alpha8_76                                           1 	(obj:0)
+Alpha8_77                                           1 	(obj:0)
+Alpha8_78                                           1 	(obj:0)
+Alpha8_79                                        0.99 	(obj:0)
+Alpha8_80                                           1 	(obj:0)
+Alpha8_81                                           1 	(obj:0)
+Alpha8_82                                           1 	(obj:0)
+Alpha8_83                                        0.99 	(obj:0)
+Alpha8_84                                           1 	(obj:0)
+Alpha8_85                                           1 	(obj:0)
+Alpha8_86                                           1 	(obj:0)
+Alpha8_87                                        0.99 	(obj:0)
+Alpha8_88                                           1 	(obj:0)
+Alpha8_89                                           1 	(obj:0)
+Alpha8_90                                           1 	(obj:0)
+Alpha8_91                                        0.99 	(obj:0)
+Alpha8_92                                           1 	(obj:0)
+Alpha8_93                                           1 	(obj:0)
+Alpha8_94                                           1 	(obj:0)
+Alpha8_95                                        0.99 	(obj:0)
+Alpha8_96                                           1 	(obj:0)
+Alpha8_97                                           1 	(obj:0)
+Alpha8_98                                           1 	(obj:0)
+Alpha8_99                                        0.99 	(obj:0)
+Alpha8_100                                          1 	(obj:0)
+Alpha8_101                                          1 	(obj:0)
+Alpha8_102                                          1 	(obj:0)
+Alpha8_103                                       0.99 	(obj:0)
+Alpha8_104                                          1 	(obj:0)
+Alpha8_105                                          1 	(obj:0)
+Alpha8_106                                          1 	(obj:0)
+Alpha8_107                                       0.99 	(obj:0)
+Alpha8_108                                          1 	(obj:0)
+Alpha8_109                                          1 	(obj:0)
+Alpha8_110                                          1 	(obj:0)
+Alpha8_111                                       0.99 	(obj:0)
+Alpha8_112                                          1 	(obj:0)
+Alpha8_113                                          1 	(obj:0)
+Alpha8_114                                          1 	(obj:0)
+Alpha8_115                                       0.99 	(obj:0)
+Alpha8_116                                          1 	(obj:0)
+Alpha8_117                                          1 	(obj:0)
+Alpha8_118                                          1 	(obj:0)
+Alpha8_119                                       0.99 	(obj:0)
+Alpha8_120                                          1 	(obj:0)
+Alpha8_121                                          1 	(obj:0)
+Alpha8_122                                          1 	(obj:0)
+Alpha8_123                                       0.99 	(obj:0)
+Alpha8_124                                          1 	(obj:0)
+Alpha8_125                                          1 	(obj:0)
+Alpha8_126                                          1 	(obj:0)
+Alpha8_127                                       0.99 	(obj:0)
+Alpha8_7                          0.00402742685330383 	(obj:39165.4700454351)
+Alpha8_67                                        0.01 	(obj:39165.4700454351)
+Alpha8_71                                        0.01 	(obj:39165.4700454351)
+Alpha8_75                                        0.01 	(obj:39165.4700454351)
+Alpha8_79                                        0.01 	(obj:39165.4700454351)
+Alpha8_83                                        0.01 	(obj:39165.4700454351)
+Alpha8_87                                        0.01 	(obj:39165.4700454351)
+Alpha8_91                                        0.01 	(obj:39165.4700454351)
+Alpha8_95                                        0.01 	(obj:39165.4700454351)
+Alpha8_99                                        0.01 	(obj:39165.4700454351)
+Alpha8_103                                       0.01 	(obj:39165.4700454351)
+Alpha8_107                                       0.01 	(obj:39165.4700454351)
+Alpha8_111                                       0.01 	(obj:39165.4700454351)
+Alpha8_115                                       0.01 	(obj:39165.4700454351)
+Alpha8_119                                       0.01 	(obj:39165.4700454351)
+Alpha8_123                                       0.01 	(obj:39165.4700454351)
+Alpha8_127                                       0.01 	(obj:39165.4700454351)
+Alpha4_0                                         0.04 	(obj:30834.5299545649)
+Alpha4_1                                         0.04 	(obj:39165.4700454351)
+Alpha5_4                                         0.04 	(obj:30834.5299545649)
+Alpha6_0                           0.0151714178331489 	(obj:30834.5299545649)
+Alpha6_2                                         0.04 	(obj:30834.5299545649)
+Alpha6_4                                         0.04 	(obj:30834.5299545649)
+Alpha6_6                                         0.04 	(obj:30834.5299545649)
+Alpha6_8                                         0.04 	(obj:30834.5299545649)
+Alpha6_10                                        0.04 	(obj:30834.5299545649)
+Alpha6_16                                        0.04 	(obj:30834.5299545649)
+Alpha7_0                           0.0151714178331489 	(obj:30834.5299545649)
+Alpha7_39                                        0.03 	(obj:39165.4700454351)
+Alpha7_49                                        0.03 	(obj:39165.4700454351)
+Alpha2_0                                         0.03 	(obj:61669.0599091297)
+Alpha2_1                                         0.04 	(obj:39165.4700454351)
+Alpha4_3                                         0.01 	(obj:78330.9400908703)
+Alpha5_0                           0.0151714178331489 	(obj:30834.5299545649)
+Alpha5_1                                         0.04 	(obj:39165.4700454351)
+Alpha5_7                                         0.01 	(obj:78330.9400908703)
+Alpha6_1                           0.0101371342665191 	(obj:39165.4700454351)
+Alpha6_5                                         0.04 	(obj:39165.4700454351)
+Alpha6_9                                         0.04 	(obj:39165.4700454351)
+Alpha6_15                                        0.01 	(obj:78330.9400908703)
+Alpha6_18                                        0.04 	(obj:30834.5299545649)
+Alpha7_1                           0.0101371342665191 	(obj:39165.4700454351)
+Alpha7_2                          0.00503428356662978 	(obj:30834.5299545649)
+Alpha7_3                           0.0061097074132153 	(obj:39165.4700454351)
+Alpha7_5                                         0.04 	(obj:39165.4700454351)
+Alpha7_6                                         0.04 	(obj:30834.5299545649)
+Alpha7_7                                         0.04 	(obj:39165.4700454351)
+Alpha7_9                                         0.04 	(obj:39165.4700454351)
+Alpha7_13                                        0.04 	(obj:39165.4700454351)
+Alpha7_15                                        0.04 	(obj:39165.4700454351)
+Alpha7_17                                        0.04 	(obj:39165.4700454351)
+Alpha7_21                                        0.04 	(obj:39165.4700454351)
+Alpha7_23                                        0.04 	(obj:39165.4700454351)
+Alpha7_25                                        0.04 	(obj:39165.4700454351)
+Alpha7_27                                        0.04 	(obj:39165.4700454351)
+Alpha7_29                                        0.04 	(obj:39165.4700454351)
+Alpha7_36                                        0.04 	(obj:30834.5299545649)
+Alpha7_37                                        0.03 	(obj:39165.4700454351)
+Alpha7_40                                        0.04 	(obj:30834.5299545649)
+Alpha7_41                                        0.03 	(obj:39165.4700454351)
+Alpha7_43                                        0.03 	(obj:39165.4700454351)
+Alpha7_47                                        0.01 	(obj:78330.9400908703)
+Alpha7_48                                        0.04 	(obj:30834.5299545649)
+Alpha7_51                                        0.03 	(obj:39165.4700454351)
+Alpha7_59                                        0.03 	(obj:39165.4700454351)
+Alpha2_1                                         0.04 	(obj:39165.4700454351)
+Alpha4_7                                         0.01 	(obj:78330.9400908703)
+Alpha5_2                                         0.04 	(obj:30834.5299545649)
+Alpha5_3                                         0.04 	(obj:39165.4700454351)
+Alpha5_5                                         0.04 	(obj:39165.4700454351)
+Alpha5_9                                         0.04 	(obj:39165.4700454351)
+Alpha5_11                                        0.01 	(obj:78330.9400908703)
+Alpha6_3                                         0.04 	(obj:39165.4700454351)
+Alpha6_11                                        0.04 	(obj:39165.4700454351)
+Alpha6_12                                        0.04 	(obj:30834.5299545649)
+Alpha6_13                                        0.04 	(obj:39165.4700454351)
+Alpha6_14                                        0.04 	(obj:30834.5299545649)
+Alpha6_21                                        0.04 	(obj:39165.4700454351)
+Alpha6_24                                        0.04 	(obj:30834.5299545649)
+Alpha6_25                                        0.04 	(obj:39165.4700454351)
+Alpha6_28                                        0.04 	(obj:30834.5299545649)
+Alpha7_2                           0.0101371342665191 	(obj:30834.5299545649)
+Alpha7_4                                         0.04 	(obj:30834.5299545649)
+Alpha7_8                                         0.04 	(obj:30834.5299545649)
+Alpha7_10                                        0.04 	(obj:30834.5299545649)
+Alpha7_11                                        0.04 	(obj:39165.4700454351)
+Alpha7_12                                        0.04 	(obj:30834.5299545649)
+Alpha7_14                                        0.04 	(obj:30834.5299545649)
+Alpha7_16                                        0.04 	(obj:30834.5299545649)
+Alpha7_18                                        0.04 	(obj:30834.5299545649)
+Alpha7_19                                        0.04 	(obj:39165.4700454351)
+Alpha7_20                                        0.04 	(obj:30834.5299545649)
+Alpha7_22                                        0.04 	(obj:30834.5299545649)
+Alpha7_24                                        0.04 	(obj:30834.5299545649)
+Alpha7_26                                        0.04 	(obj:30834.5299545649)
+Alpha7_28                                        0.04 	(obj:30834.5299545649)
+Alpha7_30                                        0.04 	(obj:30834.5299545649)
+Alpha7_31                                        0.04 	(obj:39165.4700454351)
+Alpha7_32                                        0.04 	(obj:30834.5299545649)
+Alpha7_33                                        0.03 	(obj:39165.4700454351)
+Alpha7_34                                        0.04 	(obj:30834.5299545649)
+Alpha7_35                                        0.03 	(obj:39165.4700454351)
+Alpha7_44                                        0.04 	(obj:30834.5299545649)
+Alpha7_45                                        0.03 	(obj:39165.4700454351)
+Alpha7_52                                        0.04 	(obj:30834.5299545649)
+Alpha7_53                                        0.03 	(obj:39165.4700454351)
+Alpha7_54                                        0.04 	(obj:30834.5299545649)
+Alpha7_55                                        0.01 	(obj:78330.9400908703)
+Alpha7_56                                        0.04 	(obj:30834.5299545649)
+Alpha7_57                                        0.03 	(obj:39165.4700454351)
+Alpha7_63                                        0.03 	(obj:39165.4700454351)
+Alpha2_0                                         0.01 	(obj:30834.5299545649)
+Alpha3_0                                         0.04 	(obj:30834.5299545649)
+Alpha3_1                                         0.03 	(obj:39165.4700454351)
+Alpha3_3                                         0.03 	(obj:39165.4700454351)
+Alpha4_2                                         0.04 	(obj:30834.5299545649)
+Alpha4_3                                         0.02 	(obj:39165.4700454351)
+Alpha4_5                                         0.03 	(obj:39165.4700454351)
+Alpha4_7                                         0.03 	(obj:39165.4700454351)
+Alpha5_6                                         0.04 	(obj:30834.5299545649)
+Alpha5_7                                         0.02 	(obj:39165.4700454351)
+Alpha5_8                                         0.04 	(obj:30834.5299545649)
+Alpha5_11                                        0.03 	(obj:39165.4700454351)
+Alpha5_12                                        0.04 	(obj:30834.5299545649)
+Alpha5_14                                        0.04 	(obj:30834.5299545649)
+Alpha6_7                                         0.04 	(obj:39165.4700454351)
+Alpha6_15                                        0.03 	(obj:39165.4700454351)
+Alpha6_19                                        0.03 	(obj:39165.4700454351)
+Alpha6_20                                        0.04 	(obj:30834.5299545649)
+Alpha6_27                                        0.01 	(obj:78330.9400908703)
+Alpha6_30                                        0.04 	(obj:30834.5299545649)
+Alpha6_31                                        0.01 	(obj:78330.9400908703)
+Alpha7_38                                        0.04 	(obj:30834.5299545649)
+Alpha7_39                                        0.01 	(obj:39165.4700454351)
+Alpha7_42                                        0.04 	(obj:30834.5299545649)
+Alpha7_46                                        0.04 	(obj:30834.5299545649)
+Alpha7_50                                        0.04 	(obj:30834.5299545649)
+Alpha7_61                                        0.03 	(obj:39165.4700454351)
+Alpha7_63                                      0.0099 	(obj:39165.4700454351)
+Alpha3_2                                         0.04 	(obj:30834.5299545649)
+Alpha4_4                                         0.04 	(obj:30834.5299545649)
+Alpha4_6                                         0.04 	(obj:30834.5299545649)
+Alpha5_10                                        0.04 	(obj:30834.5299545649)
+Alpha5_13                                        0.03 	(obj:39165.4700454351)
+Alpha5_15                                        0.03 	(obj:39165.4700454351)
+Alpha6_17                                        0.04 	(obj:39165.4700454351)
+Alpha6_22                                        0.04 	(obj:30834.5299545649)
+Alpha6_23                                        0.03 	(obj:39165.4700454351)
+Alpha6_26                                        0.04 	(obj:30834.5299545649)
+Alpha6_27                                        0.02 	(obj:39165.4700454351)
+Alpha6_29                                        0.03 	(obj:39165.4700454351)
+Alpha7_47                                        0.02 	(obj:39165.4700454351)
+Alpha7_55                                        0.02 	(obj:39165.4700454351)
+Alpha7_58                                        0.04 	(obj:30834.5299545649)
+Alpha7_59                                        0.01 	(obj:39165.4700454351)
+Alpha7_60                                        0.04 	(obj:30834.5299545649)
+Alpha7_62                                        0.04 	(obj:30834.5299545649)
+Alpha6_31                                      0.0201 	(obj:39165.4700454351)
